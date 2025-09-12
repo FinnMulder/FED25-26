@@ -1,0 +1,179 @@
+/* CUSTOM PROPERTIES - Finn */
+/*****************************/
+/* :root {
+ constants 
+ --pos:1;
+ --neg:-1;
+ --ON: initial;
+ --OFF: ;
+ --light: var(--ON);
+ --dark: var(--OFF);
+ --reduced-motion: var(--ON);
+ --motion: var(--OFF);
+ /* sizes 
+ --size-chrome-main:1.5em;
+ --size-chrome-sub:calc(var(--size-chrome-main) / 3);
+ /* colors 
+ --color-sannes-hs:205.2deg 75%;
+ --color-sannes-blue:hsl(var(--color-sannes-hs) 42%);
+ --color-sannes-blue-sun:hsl(var(--color-sannes-hs) 72%);
+ --color-sannes-blue-shade:hsl(var(--color-sannes-hs) 22%);
+ /* color temp 
+ --color-root-temp:0;
+ --color-root-temp-abs:max( var(--color-root-temp, 0), calc(var(--color-roottemp, 0) * -1));
+ transition: 1s;
+} */
+/*
+to do lijst
+Verdieping 1 - logo - knopje,  hamburgermenu - blauwe achtergrond
+verdieping 2 - h1 - p - 2 buttons - blauw boog shape, boven foto
+verdieping 3 - h2 - p - button - 2 bar le duc flessen met animatie
+verdieping 4 - marquee-effect slider met tekst
+verdieping 5 - h2 - p - button
+verdieping 6 - foto slider die doorloopt
+verdieping 7 - marquee-effect slider met tekst
+verdieping 8 - h2 - p - foto, tekst 3 keer - button
+verdieping 9 - h2 - p - button - blauw boog shape
+verdieping 10 - h2 - p - 5 keer uitschuibare button met p tekst
+verdieping 11 - h1 - p - button
+verdieping 12 - marquee-effect slider met tekst
+verdieping 13 - footer - p - logo - invoer formulier
+*/
+
+
+:root {
+  --bg: #fefefe;
+  --text: white;
+  --text-2: #049DE0;
+  --accent: #049DE0;
+}
+[data-theme="dark"] {
+  --bg: #222;
+  --text: #fefefe;
+  --accent: #66aaff;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: var(--accent);
+
+}
+
+
+header {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  position: fixed; 
+  z-index: 10;
+  background: var(--accent);
+  padding: 1em 0;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.3em 0.6em;
+}
+
+
+#producten {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  background-image: url("./IMG121.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-bottom: 20%;
+  z-index: 1;
+}
+
+#producten h1 {
+  font-size: 3rem;
+  margin: 0.2em 0;
+}
+
+#producten p {
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.header-button {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.6em 1.2em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.header-button:hover {
+  transform: scale(1.05);
+}
+#ons-verhaal{
+  display: flex;
+  flex-direction: column;     
+  justify-content: flex-end;  
+  align-items: center;  
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+#ons-verhaal a {
+    background-color: var(--bg);
+  color: var(--text-2);
+  padding: 0.6em 1.2em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+#ons-verhaal a:hover {
+  transform: scale(1.05);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+
+
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.3em 0.6em;
+}
