@@ -57,7 +57,7 @@ body, html {
 }
 section {
   opacity: 0;
-  transform: translateY(13,75em);
+  transform: translateY(13.75em);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
