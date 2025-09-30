@@ -103,6 +103,8 @@ window.addEventListener("scroll", () => {
   const rect = flesWrapper.parentElement.getBoundingClientRect();
   if (rect.top < window.innerHeight && rect.bottom > 0) {
     // Bereken rotatie gebaseerd op scrollpositie
+        // Had moeite met deze waardes kloppend maken, is uiteindelijk gelukt door hulp online
+
     flesWrapper.style.transform = `rotateZ(${
       Math.sin((1 - rect.top / window.innerHeight) * Math.PI) * 15
     }deg)`;
